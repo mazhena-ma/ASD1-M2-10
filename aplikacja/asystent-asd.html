@@ -1,0 +1,378 @@
+<!doctype html><html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Przed obroną • Panel studenta</title><link rel="icon" href="data:,"><style>
+:root{font-family:Segoe UI,Arial,sans-serif;color:#202c3c;background:#f5f6fa;font-synthesis:none;--navy:#142d50;--accent:#244f85;--muted:#596679;--line:#dce2eb}*{box-sizing:border-box}body{margin:0}button,input,select,textarea{font:inherit}button{cursor:pointer;border:1px solid var(--line);border-radius:8px;padding:11px 16px;background:white;color:var(--navy);font-weight:600;min-height:44px}button:hover{background:#edf2fa}button.primary{background:var(--navy);color:white;border-color:var(--navy)}button.danger{color:#a51c32}button:disabled{opacity:.55;cursor:default}a{color:#244f85} :focus-visible{outline:3px solid #b66a04;outline-offset:4px}.skip{position:fixed;top:-100px;z-index:9;background:white;padding:12px}.skip:focus{top:8px}.sidebar{position:fixed;inset:0 auto 0 0;width:264px;background:white;border-right:1px solid var(--line);padding:28px 22px;display:flex;flex-direction:column}.brand{display:flex;flex-direction:column;gap:7px;padding:0 8px 30px}.brand img{width:184px;height:92px;object-fit:contain;margin-bottom:20px}.brand strong{font-size:18px;letter-spacing:.08em}.brand span,.sidebar-foot{font-size:12px;color:var(--muted)}nav{display:grid;gap:9px}nav button{display:flex;gap:13px;border:0;text-align:left;font-size:12px;color:#69768a}nav span{font-size:14px}nav [aria-current]{background:#eaf0f9;color:#173a68}.sidebar-foot{margin-top:auto;line-height:1.8;padding:22px 8px 0}.workspace{margin-left:264px}header{height:76px;padding:0 40px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);background:#fff;font-size:13px;color:var(--muted)}.session{border:1px solid var(--line);padding:7px 11px;border-radius:20px}main{max-width:1400px;margin:auto;padding:36px 40px}.page-heading{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:16px}.eyebrow{font-size:11px;letter-spacing:.16em;font-weight:700;color:#647791}h1{font-size:30px;letter-spacing:-.035em;margin:8px 0 10px}h2{font-size:19px;letter-spacing:-.02em;margin:0 0 16px}h3{font-size:16px;margin:0 0 10px}p{line-height:1.6}#subtitle{color:var(--muted);margin:0;font-size:14px}#notice{min-height:24px;font-size:14px;color:#234d39}#notice.error,.error{color:#a51c32}.grid{display:grid;grid-template-columns:1.25fr 1fr;gap:22px}.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:26px;box-shadow:0 4px 14px #142d5004;min-width:0}.hero{background:var(--navy);color:white;display:flex;align-items:center;gap:28px;min-height:245px}.hero p{color:#d4e0f2;font-size:14px}.ring{--progress:0deg;flex:none;width:160px;height:160px;border-radius:50%;background:conic-gradient(#a9c5ef var(--progress),#3b5272 0);display:grid;place-items:center}.ring-center{background:var(--navy);border-radius:50%;width:136px;height:136px;display:flex;flex-direction:column;align-items:center;justify-content:center}.ring strong{font-size:32px}.ring small{color:#cfdbed;font-size:11px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:22px 0}.stat{padding:20px;background:white;border:1px solid var(--line);border-radius:12px}.stat strong{font-size:28px;display:block;margin-bottom:5px}.stat span,.muted{color:var(--muted);font-size:13px}.list{display:grid;gap:12px}.row{padding:16px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:16px;align-items:center}.row:last-child{border:0}.row p{margin:4px 0;font-size:13px;color:var(--muted)}.badge{display:inline-block;padding:4px 9px;border-radius:6px;background:#edf2f9;font-size:12px;color:#28496f}.badge.done{background:#e9f3ed;color:#24553c}.toolbar,.actions{display:flex;align-items:center;gap:9px;flex-wrap:wrap}.toolbar{justify-content:space-between;margin-bottom:20px}.record{display:grid;grid-template-columns:1fr auto;gap:16px}.record h3,.record p{overflow-wrap:anywhere}.record p{color:var(--muted);font-size:13px}.actions button{font-size:13px;padding:8px 12px}.empty{padding:40px 20px;text-align:center;color:var(--muted);border:1px dashed #bbc6d5;border-radius:10px}.full{grid-column:1/-1}footer{font-size:14px;color:var(--accent);line-height:1.5;border-top:1px solid var(--line);margin-top:34px;padding-top:20px}footer p{margin:0;line-height:inherit}footer p+p{margin-top:12px}dialog{width:min(640px,calc(100% - 32px));border:1px solid var(--line);border-radius:16px;padding:28px;max-height:90vh;box-shadow:0 24px 80px #0f24473d}dialog::backdrop{background:#10203999}dialog h2{padding-right:10px}.fields{display:grid;grid-template-columns:1fr 1fr;gap:18px}label{display:flex;flex-direction:column;gap:7px;font-size:13px;font-weight:600}input,select,textarea{width:100%;border:1px solid #aebaca;border-radius:7px;padding:11px;background:#fff;color:#202c3c;min-width:0}textarea{resize:vertical;min-height:95px}.check{flex-direction:row;align-items:center}.check input{width:20px;height:20px}input[readonly]{background:#edf0f5}.dialog-actions{display:flex;justify-content:flex-end;gap:10px;margin-top:24px}dl{display:grid;grid-template-columns:135px 1fr;gap:12px;font-size:14px}dt{color:var(--muted)}dd{margin:0;white-space:pre-wrap;overflow-wrap:anywhere}.table-wrap{overflow:auto}table{width:100%;border-collapse:collapse;font-size:13px;text-align:left}th,td{padding:12px;border-bottom:1px solid var(--line)}th{color:#425572;background:#f2f5fa}.training{border-top:4px solid #244f85}.training label{margin-top:18px}.training h3{font-size:22px;line-height:1.5}.training .actions{margin-top:18px}.data-card p{color:var(--muted);font-size:14px}.file{margin:20px 0}.step{border-left:3px solid #9fb8dc;padding:4px 16px;margin:14px 0;font-size:14px}.step p{margin:5px 0}.pill{font-size:12px;letter-spacing:.05em;color:#526a89}.sronly{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}@media(min-width:1500px){main{padding-top:48px}}@media(max-width:1100px){.sidebar{width:220px;padding:24px 16px}.brand img{width:164px}.workspace{margin-left:220px}main{padding:28px 24px}.grid{grid-template-columns:1fr}.page-heading{align-items:flex-start}h1{font-size:27px}.record{grid-template-columns:1fr}}@media(max-width:700px){.sidebar{position:static;width:auto;padding:16px;border-right:0;border-bottom:1px solid var(--line)}.brand{padding:0;display:grid;grid-template-columns:120px 1fr;align-items:center;gap:4px 18px}.brand img{grid-row:span 2;width:120px;height:60px;margin:0}.brand strong{font-size:14px}.brand span{font-size:11px}nav{grid-template-columns:repeat(2,1fr);gap:4px;margin-top:16px}nav button{padding:8px;font-size:10px}nav span{font-size:12px}.sidebar-foot{display:none}.workspace{margin:0}header{height:auto;padding:12px 18px;gap:10px;font-size:11px}.session{font-size:10px}main{padding:24px 18px}.page-heading{flex-direction:column;gap:14px}h1{font-size:26px}.hero{padding:22px 18px;gap:18px}.ring{width:120px;height:120px}.ring-center{width:100px;height:100px}.ring strong{font-size:24px}.hero h2{font-size:17px}.hero p{font-size:12px}.card{padding:20px}.stats{gap:8px}.stat{padding:14px 10px}.stat strong{font-size:24px}.stat span{font-size:11px}.fields{grid-template-columns:1fr}.full{grid-column:auto}.row{align-items:flex-start}.actions{gap:7px}dialog{padding:22px}.toolbar{align-items:flex-start}.training h3{font-size:19px}dl{grid-template-columns:100px 1fr}.table-wrap{max-width:100%}}
+/* Oficjalny HEX UwB; pozostałe kolory są autorską paletą interfejsu. */
+:root{--navy:#862633;--accent:#862633}.ring{background:conic-gradient(#f3bfca var(--progress),#a95765 0)}.hero p,.ring small{color:#fff}.brand img{padding:16px;box-sizing:content-box;width:120px;height:120px;margin:0 auto 14px}.sidebar-foot b{color:#862633}.training{border-top-color:#862633}.hero>div:last-child{min-width:0}h3,p,dd,.pill{overflow-wrap:anywhere}@media(max-width:700px){.brand img{width:64px;height:64px;padding:12px;margin:0}.brand{grid-template-columns:88px 1fr}.hero{flex-wrap:wrap}.sidebar-foot{display:block;margin-top:8px;padding:0;font-size:10px}.sidebar-foot p{display:none}}
+
+/* Logo Filii UwB w Wilnie: poziomy znak uczelni, zachowane proporcje. */
+.brand img{width:188px;height:80px;padding:2px;box-sizing:border-box;margin:0 0 16px;object-fit:contain;object-position:left center}
+@media(max-width:700px){.brand img{width:126px;height:54px;padding:0;margin:0;object-position:left center}.brand{grid-template-columns:132px 1fr}}
+
+
+/* Filia UwB w Wilnie — konsekwentna paleta wizualna. 
+   #862633 = opublikowany HEX UwB; pozostałe odcienie to kolory pomocnicze.
+   Nie zmieniamy ani nie przebarwiamy oryginalnego logo SVG. */
+:root {
+  --navy: #862633;
+  --accent: #862633;
+  --muted: #665962;
+  --line: #e9d9dd;
+  --uwb-burgundy: #862633;
+  --uwb-burgundy-dark: #661723;
+  --uwb-rose: #f6e8ec;
+  --uwb-rose-medium: #edc3cc;
+  --uwb-paper: #faf7f8;
+  color: #332c31;
+  background: var(--uwb-paper);
+}
+body {background: var(--uwb-paper); color: #332c31;}
+.sidebar {background:#fff; border-right-color:#ead9de;}
+.brand strong {color:var(--uwb-burgundy-dark);}
+.brand span, .sidebar-foot {color:#6e5961;}
+nav button {color:#66545e; border-radius:10px;}
+nav button:hover {background:#faf0f3; color:var(--uwb-burgundy-dark);}
+nav [aria-current] {background:#f5e5e9; color:var(--uwb-burgundy-dark); font-weight:700; box-shadow: inset 3px 0 0 var(--uwb-burgundy);}
+header {background:#fff; border-bottom:3px solid var(--uwb-burgundy); color:#685760;}
+.session {background:#fff9fa; border-color:#ead9de; color:#765361;}
+.eyebrow {color:var(--uwb-burgundy);}
+h1,h2,h3 {color:#322931;}
+.hero {background:var(--uwb-burgundy); border-color:var(--uwb-burgundy); color:#fff;}
+.hero h2,.hero h3 {color:#fff;}
+.hero p,.ring small {color:#fff;}
+.ring {background:conic-gradient(#ffcbd5 var(--progress),#a95e6b 0);}
+.ring-center {background:var(--uwb-burgundy);}
+.card,.stat {border-color:#eadde0; box-shadow:0 4px 18px rgba(91,35,50,.035);}
+button {color:var(--uwb-burgundy-dark); border-color:#e4d6da;}
+button:hover {background:#faeff2;}
+button.primary {background:var(--uwb-burgundy); border-color:var(--uwb-burgundy); color:#fff;}
+button.primary:hover {background:var(--uwb-burgundy-dark);}
+button.danger {color:#9a2237;}
+a {color:var(--uwb-burgundy);}
+:focus-visible {outline-color:var(--uwb-burgundy);}
+#notice {color:#365a44;}
+.badge {background:#f7e9ed; color:#752333;}
+.badge.done {background:#e7f2eb; color:#24553c;}
+.empty {border-color:#dfc8cf; background:#fffafb;}
+.training {border-top-color:var(--uwb-burgundy);}
+th {background:#faeff2; color:#662b3b;}
+.step {border-left-color:var(--uwb-burgundy);}
+.pill {color:#7b4353;}
+footer {color:#6e3a49;}
+input,select,textarea {border-color:#c9b7be; color:#332c31;}
+input[readonly] {background:#f7eff1;}
+dialog::backdrop {background:rgba(44,19,28,.56);}
+/* Fix: all navbar and links use a single burgundy language. */
+
+
+/* Motyw fioletowy inspirowany stroną Filii UwB — świadoma wersja projektu,
+   nie deklaracja oficjalnej palety Pantone/HEX. Logo pozostaje oryginalne. */
+:root {
+  --navy:#50328F;
+  --accent:#5B3FA6;
+  --muted:#655D75;
+  --line:#DED7EC;
+  --uwb-burgundy:#5B3FA6;
+  --uwb-burgundy-dark:#3F2878;
+  --uwb-rose:#F3EEFB;
+  --uwb-rose-medium:#D8CCF2;
+  --uwb-paper:#FAF8FE;
+  color:#29233B;
+  background:#FAF8FE;
+}
+body {background:#FAF8FE;color:#29233B}
+.sidebar {background:#fff;border-right-color:#E5DDF3}
+.brand strong {color:#3F2878}
+.brand span,.sidebar-foot {color:#625975}
+.sidebar-foot b {color:#5B3FA6}
+nav button {color:#625A78}
+nav button:hover {background:#F4EFFB;color:#3F2878}
+nav [aria-current] {background:#EEE7FA;color:#402778;box-shadow:inset 3px 0 0 #5B3FA6}
+header {border-bottom:3px solid #5B3FA6;color:#625975}
+.session {background:#FAF8FE;color:#55447E;border-color:#E5DDF3}
+.eyebrow {color:#5B3FA6}
+h1,h2,h3 {color:#29233B}
+.hero {background:linear-gradient(125deg,#3F2878 0%,#5B3FA6 100%);border-color:#5B3FA6;color:#fff}
+.hero h2,.hero h3,.hero p {color:#fff}
+.ring {background:conic-gradient(#DFCCFF var(--progress),#8974C0 0)}
+.ring-center {background:#50328F}
+.ring small {color:#fff}
+.card,.stat {border-color:#E5DDF3;box-shadow:0 4px 18px rgba(66,40,121,.055)}
+button {color:#442C84;border-color:#D9D0F0}
+button:hover {background:#F3EEFB}
+button.primary {background:#5B3FA6;border-color:#5B3FA6;color:#fff}
+button.primary:hover {background:#442C84;border-color:#442C84}
+button.danger {color:#8D3059}
+a {color:#5B3FA6}
+:focus-visible {outline-color:#7558B7}
+.badge {background:#F1EAFB;color:#4C3288}
+.badge.done {background:#E6F2EB;color:#22563C}
+.empty {border-color:#D8CCED;background:#FDFBFF}
+.training {border-top-color:#5B3FA6}
+th {background:#F3EEFB;color:#473279}
+.step {border-left-color:#8E79CC}
+.pill {color:#5F4B89}
+footer {color:#55447E;border-top-color:#DED7EC}
+input,select,textarea {border-color:#CBBFDF;color:#29233B}
+input[readonly] {background:#F3EEFB}
+dialog::backdrop {background:rgba(35,22,65,.55)}
+
+</style></head><body><a class="skip" href="#main">Przejdź do treści</a><aside class="sidebar"><div class="brand"><img id="logo" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIGlkPSJXYXJzdHdhXzIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDQyNC43OCAxNTIuNzgiPjxkZWZzPjxzdHlsZT4uY2xzLTF7c3Ryb2tlLXdpZHRoOjNweDt9LmNscy0xLC5jbHMtMiwuY2xzLTN7ZmlsbDpub25lO3N0cm9rZTojMTAwYzA4O30uY2xzLTEsLmNscy0ze3N0cm9rZS1taXRlcmxpbWl0OjEwO30uY2xzLTQsLmNscy01LC5jbHMtNntmaWxsOiMxMDBjMDg7fS5jbHMtMntzdHJva2UtbGluZWpvaW46cm91bmQ7fS5jbHMtMiwuY2xzLTN7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLXdpZHRoOjRweDt9LmNscy03e2ZvbnQtc2l6ZTo4MnB4O30uY2xzLTh7bGV0dGVyLXNwYWNpbmc6MGVtO30uY2xzLTgsLmNscy05e2ZpbGw6Izk5MGEyYztmb250LWZhbWlseTpNeXJpYWRQcm8tQm9sZCwgJ015cmlhZCBQcm8nO2ZvbnQtd2VpZ2h0OjcwMDt9LmNscy0xMCwuY2xzLTUsLmNscy02e2ZvbnQtZmFtaWx5Ok15cmlhZFByby1MaWdodCwgJ015cmlhZCBQcm8nO2ZvbnQtd2VpZ2h0OjMwMDt9LmNscy01e2xldHRlci1zcGFjaW5nOi0uMDNlbTt9PC9zdHlsZT48L2RlZnM+PGcgaWQ9IldhcnN0d2FfMS0yIj48Zz48Zz48cG9seWdvbiBjbGFzcz0iY2xzLTEiIHBvaW50cz0iMS43IDE0MS45OCAxOS40NSA0Mi4xNiAzOC4zMSAzNi42NyA2OC44OSAzNi42NyA4OS4yMiA0Mi42MSAxMDUuNjUgMTQxLjk4IDc4LjE5IDE1MS4yOCAyOS42NCAxNTEuMjggMS43IDE0MS45OCIvPjxsaW5lIGNsYXNzPSJjbHMtMSIgeDE9IjI5LjY0IiB5MT0iMTUxLjI4IiB4Mj0iMzguMzEiIHkyPSIzNi42NyIvPjxsaW5lIGNsYXNzPSJjbHMtMSIgeDE9IjY4Ljg5IiB5MT0iMzYuNjciIHgyPSI3OC4xOSIgeTI9IjE1MS4yOCIvPjwvZz48cGF0aCBjbGFzcz0iY2xzLTQiIGQ9Im03Mi40Miw3LjM0Yy0uMzEsMi40OC0uNjYsNC45Ni0uOTUsNy40NC0uMDkuODItLjQyLDEuMjgtMS4yMywxLjU2LTIuNjUuOS01LjA5LDEuMDUtNy41Mi0uOC0yLjI2LTEuNzEtNC44My0xLjA4LTcuMy0uMzItLjIuMDctLjQxLjUyLS40MS44LS4wNCwyLjI3LS4wMiw0LjU0LS4wMiw2Ljg5LjAyLDAsLjA0LDAsLjA1LjAxaC0yLjMydi0xLjA0Yy0uMDQtNS43NC0uMDYtMTEuNDctLjEzLTE3LjIxLDAtLjU3LS4yMS0xLjE3LS40NS0xLjcxLS40My0uOTYtLjI2LTIuMDMuNTUtMi41OC44My0uNTYsMS42OC0uNTEsMi40NS4xMi43OC42NS44MiwxLjY4LjI2LDIuNjEtLjI5LjQ4LS40MiwxLjA1LS42OCwxLjczLDEuNjEtLjM3LDIuOTQtLjc0LDQuMjgtLjk4LDIuMjQtLjQxLDQuMzEuMjIsNi4xMiwxLjQ5LDEuNzMsMS4yMSwzLjQzLDEuMDYsNS4yNC4zNSwyLjEtLjgzLDIuMzQtLjY0LDIuMDYsMS42MloiLz48cG9seWxpbmUgY2xhc3M9ImNscy0zIiBwb2ludHM9Ijk0LjA5IDQ0LjQ4IDcxLjIxIDM2LjM4IDM2LjA2IDM2LjM4IDE0LjQyIDQzLjkxIi8+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjIxLjIxIDI5LjQ4IDMxLjEgMjYuMDcgMzEuMSAzOC4xIDIxLjU1IDQxLjQyIDIxLjIxIDI5LjQ4Ii8+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9Ijg3LjE1IDQyLjAyIDg3LjE1IDI5LjU0IDc4LjEyIDI2LjEzIDc3Ljc3IDM4Ljc4IDg3LjE1IDQyLjAyIi8+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjQxLjg3IDI0LjE1IDY2LjI0IDI0LjE2IDY2LjE5IDM2LjM4IDQxLjg3IDM2LjM4IDQxLjg3IDI0LjE1Ii8+PHBhdGggY2xhc3M9ImNscy00IiBkPSJtNTIuMzYsMTA5LjQ4aDIuOTZjMy40MSwwLDYuMTgsMi43Nyw2LjE4LDYuMTh2MjUuOTljMCwxLjQtMS4xMywyLjUzLTIuNTMsMi41M2gtMTAuMjdjLTEuNCwwLTIuNTMtMS4xMy0yLjUzLTIuNTN2LTI1Ljk5YzAtMy40MSwyLjc3LTYuMTgsNi4xOC02LjE4WiIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0ibTE5LjA3LDEzMC4xNGwtNC4zNy0uMjNjLS44NC0uMDQtMS40Mi0uNzYtMS4zLTEuNjFsMS45MS0xMy43M2MuMjktMi4wNiwyLjE3LTMuNjQsNC4yMS0zLjU0aDBjMi4wNC4xMSwzLjQ2LDEuODYsMy4xOCwzLjkybC0xLjkxLDEzLjczYy0uMTIuODQtLjg5LDEuNDktMS43MiwxLjQ1WiIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0ibTg3LjQ2LDEyOC42OWwtMS45MS0xMy43M2MtLjI5LTIuMDYsMS4xNC0zLjgyLDMuMTgtMy45MmgwYzIuMDQtLjExLDMuOTMsMS40OCw0LjIxLDMuNTRsMS45MSwxMy43M2MuMTIuODQtLjQ3LDEuNTYtMS4zLDEuNjFsLTQuMzcuMjNjLS44NC4wNC0xLjYxLS42LTEuNzItMS40NVoiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Im00OS41Miw5Ny40NHYtMTIuNThjMC0yLjI2LDEuODMtNC4wOSw0LjA5LTQuMDloLjk5YzIuMjYsMCw0LjA5LDEuODMsNC4wOSw0LjA5djEyLjU4YzAsLjkyLS43NSwxLjY3LTEuNjcsMS42N2gtNS44MmMtLjkyLDAtMS42Ny0uNzUtMS42Ny0xLjY3WiIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0ibTgzLjkxLDk4Ljc4bC0xLjg2LTEzLjI1Yy0uMjgtMiwxLjExLTMuNjIsMy4xMS0zLjYyaDBjMiwwLDMuODUsMS42Miw0LjEzLDMuNjJsMS44NiwxMy4yNWMuMTEuODItLjQ1LDEuNDgtMS4yNywxLjQ4aC00LjI3Yy0uODIsMC0xLjU3LS42Ni0xLjY5LTEuNDhaIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJtMjIuNzQsMTAwLjI2aC00LjI3Yy0uODIsMC0xLjM5LS42Ni0xLjI3LTEuNDhsMS44Ni0xMy4yNWMuMjgtMiwyLjEzLTMuNjIsNC4xMy0zLjYyaDBjMiwwLDMuMzksMS42MiwzLjExLDMuNjJsLTEuODYsMTMuMjVjLS4xMS44Mi0uODcsMS40OC0xLjY5LDEuNDhaIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJtNTAuODIsNjEuMXYtMTAuNDJjMC0xLjU5LDEuMjktMi44OSwyLjg5LTIuODloLjdjMS41OSwwLDIuODksMS4yOSwyLjg5LDIuODl2MTAuNDJjMCwuNjUtLjUzLDEuMTgtMS4xOCwxLjE4aC00LjExYy0uNjUsMC0xLjE4LS41My0xLjE4LTEuMThaIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJtMjIuNzgsNjQuMmwxLjA4LTkuODdjLjE5LTEuNzgsMS43LTMuNjYsMy4zNy00LjJoMGMxLjY3LS41NCwyLjg2LjQ1LDIuNjcsMi4yM2wtMS4wOCw5Ljg3Yy0uMDguNzMtLjcsMS41LTEuMzgsMS43MmwtMy41NywxLjE3Yy0uNjguMjItMS4xNy0uMTktMS4wOS0uOTFaIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJtODQuOTMsNjUuMTFsLTMuNTctMS4xN2MtLjY4LS4yMi0xLjMtLjk5LTEuMzgtMS43MmwtMS4wOC05Ljg3Yy0uMTktMS43OCwxLTIuNzgsMi42Ny0yLjIzaDBjMS42Ny41NCwzLjE4LDIuNDMsMy4zNyw0LjJsMS4wOCw5Ljg3Yy4wOC43My0uNDEsMS4xNC0xLjA5LjkxWiIvPjwvZz48dGV4dCBjbGFzcz0iY2xzLTciIHRyYW5zZm9ybT0idHJhbnNsYXRlKDExMyA3Mi43KSI+PHRzcGFuIGNsYXNzPSJjbHMtNSIgeD0iMCIgeT0iMCI+RjwvdHNwYW4+PHRzcGFuIGNsYXNzPSJjbHMtNiIgeD0iMzUuNDIiIHk9IjAiPmlsaWE8L3RzcGFuPjx0c3BhbiBjbGFzcz0iY2xzLTEwIiB4PSIxMjQuMzEiIHk9IjAiPiA8L3RzcGFuPjx0c3BhbiBjbGFzcz0iY2xzLTgiIHg9IjE0Mi4yNyIgeT0iMCI+VTwvdHNwYW4+PHRzcGFuIGNsYXNzPSJjbHMtOSIgeD0iMTk3Ljc4IiB5PSIwIj53QjwvdHNwYW4+PC90ZXh0PjxnPjxwYXRoIGNsYXNzPSJjbHMtNCIgZD0ibTEyNC43LDEwOS43bDYuNTcsMjIuNjZjMS40LDQuNjUsMi41NSw4LjYzLDMuMzcsMTIuNDVoLjI1Yy45OS0zLjY1LDIuMy03Ljg4LDMuOTQtMTIuNDVsNy44OS0yMi42NmgzLjdsNy41NiwyMi40OWMxLjU2LDQuODEsMi43OSw4Ljg4LDMuODYsMTIuNjJoLjE2Yy44Mi0zLjczLDIuMDUtNy43MiwzLjUzLTEyLjUzbDcuMDctMjIuNTdoNC4wM2wtMTMuMTUsMzkuODRoLTMuNDVsLTcuNC0yMi4xNmMtMS43My00LjgxLTMuMDQtOS4xMy00LjExLTEzLjYxaC0uMTZjLTEuMTUsNC43My0yLjYzLDkuMTMtNC4yNywxMy42OWwtNy44OSwyMi4wOGgtMy40NWwtMTIuMDgtMzkuODRoNC4wM1oiLz48cGF0aCBjbGFzcz0iY2xzLTQiIGQ9Im0yMTIuMjUsMTQ5LjU0bC0xNi4wNy01OS45OWg0LjM2bDguOSwzMy44MmMyLjA5LDcuNzQsMy45LDE0Ljk1LDUuMDgsMjAuNTZoLjI3YzEtNS42MSwzLjE4LTEyLjczLDUuNTQtMjAuNTZsMTAuMDgtMzMuODJoNC4xN2w5LjA4LDMzLjU1YzEuOTEsNy4zLDMuOTksMTQuNzgsNC45LDIwLjgzaC4yN2MxLjM2LTYuNSwzLjI3LTEyLjk5LDUuNTQtMjAuNjVsMTAuMDgtMzMuNzNoNC40NWwtMTguMzQsNTkuOTloLTQuMThsLTkuMjYtMzQuNTNjLTIuMzYtOC44MS0zLjgxLTE0Ljc3LTQuNzItMjAuMzhoLS4xOGMtMSw1LjYxLTIuNjMsMTEuNDgtNS40NSwyMC4yOWwtMTAuMzUsMzQuNjJoLTQuMThaIi8+PHBhdGggY2xhc3M9ImNscy00IiBkPSJtMjgxLjQyLDk0LjYyYzAsMS45Ni0xLjM2LDMuNjUtMy42MywzLjY1LTIsMC0zLjM2LTEuNjktMy4zNi0zLjY1czEuNTQtMy43NCwzLjU0LTMuNzQsMy40NSwxLjY5LDMuNDUsMy43NFptLTUuNjMsNTQuOTJ2LTQyLjcyaDQuMjd2NDIuNzJoLTQuMjdaIi8+PHBhdGggY2xhc3M9ImNscy00IiBkPSJtMjk0Ljc2LDg2LjM0aDQuMjd2NjMuMTloLTQuMjd2LTYzLjE5WiIvPjxwYXRoIGNsYXNzPSJjbHMtNCIgZD0ibTMxNC4wMSwxMTcuMDVjMC0zLjkyLS4xOC02Ljg1LS4zNi0xMC4yNGgzLjk5bC4zNiw3Ljc0aC4xOGMyLjM2LTQuODEsNy44MS04LjcyLDE0Ljk4LTguNzIsNC4xOCwwLDE1LjE2LDIuMDUsMTUuMTYsMTguMDd2MjUuNjNoLTQuMjd2LTI1LjI4YzAtNy43NC0zLjA5LTE0Ljc3LTEyLjA3LTE0Ljc3LTYuMTcsMC0xMS4zNSw0LjI3LTEzLjA3LDkuNzktLjM2LDEuMDctLjY0LDIuNDktLjY0LDMuODN2MjYuNDNoLTQuMjd2LTMyLjQ5WiIvPjxwYXRoIGNsYXNzPSJjbHMtNCIgZD0ibTM2OC4yOSw5NC42MmMwLDEuOTYtMS4zNiwzLjY1LTMuNjMsMy42NS0yLDAtMy4zNi0xLjY5LTMuMzYtMy42NXMxLjU0LTMuNzQsMy41NC0zLjc0LDMuNDUsMS42OSwzLjQ1LDMuNzRabS01LjYzLDU0Ljkydi00Mi43Mmg0LjI3djQyLjcyaC00LjI3WiIvPjxwYXRoIGNsYXNzPSJjbHMtNCIgZD0ibTM4Mi4yNywxMjcuNzNjMCwxMy43MSw3LjYyLDE5LjA1LDE2LjYxLDE5LjA1LDYuMzUsMCw5LjYyLTEuMjUsMTIuMDctMi40bDEuMDksMy4zOGMtMS42My44OS02LjA4LDIuNzYtMTMuNzEsMi43Ni0xMi41MywwLTIwLjMzLTguOTktMjAuMzMtMjEuNTQsMC0xNC4yNCw4LjM1LTIzLjE0LDE5LjYxLTIzLjE0LDE0LjI1LDAsMTYuOTcsMTMuMTcsMTYuOTcsMTkuMzEsMCwxLjE2LDAsMS44Ny0uMTgsMi41OGgtMzIuMTNabTI3Ljc4LTMuMzhjLjA5LTUuOTYtMi40NS0xNS4wNC0xMi45OC0xNS4wNC05LjYyLDAtMTMuOCw4LjQ2LTE0LjUyLDE1LjA0aDI3LjVaIi8+PC9nPjwvZz48L3N2Zz4=" alt="Logo Filii Uniwersytetu w Białymstoku w Wilnie"><strong>PRZED OBRONĄ</strong><span>Uniwersytet w Białymstoku<br>Filia w Wilnie</span></div><nav aria-label="Główne menu"><button data-view="dashboard" aria-current="page">01 <span>Pulpit</span></button><button data-view="items">02 <span>Materiały i ćwiczenia</span></button><button data-view="questions">03 <span>Pytania i trening</span></button><button data-view="analysis">04 <span>Analiza algorytmów</span></button><button data-view="data">05 <span>Import i eksport</span></button></nav><div class="sidebar-foot">ASD I · M2 / 2026–2027<br><b>Projekt dydaktyczny, nieoficjalny</b><p>Uniwersytet w Białymstoku<br>Filia w Wilnie</p></div></aside><div class="workspace"><header><span>Twoja droga do obrony</span><span class="session">● Zapis tylko w tej sesji</span></header><main id="main" tabindex="-1"><div class="page-heading"><div><p class="eyebrow">PLANUJ · ĆWICZ · SPRAWDZAJ</p><h1 id="title">Twój plan przygotowań do obrony</h1><p id="subtitle">Małe kroki. Jasne priorytety. Twój własny plan.</p></div><button id="example" class="secondary">Wczytaj przykład kontrolny</button></div><p id="notice" role="status" aria-live="polite"></p><section id="content" aria-labelledby="title"></section><footer><p>Wskaźnik gotowości przedstawia stopień realizacji indywidualnego planu przygotowań do obrony dyplomowej. Nie stanowi oceny wiedzy studenta ani potwierdzenia spełnienia formalnych wymagań uczelni.</p><p>Uwaga: Dane przechowywane są wyłącznie podczas bieżącej sesji. Aby uniknąć ich utraty, przed zamknięciem lub odświeżeniem strony należy wyeksportować plan do pliku JSON.</p></footer></main></div><dialog id="dialog" aria-labelledby="dialog-title"><div id="dialog-body"></div></dialog><script>
+const OFFLINE_SCENARIO = {
+  "version": 1,
+  "items": [
+    {
+      "id": "A",
+      "name": "Prezentacja",
+      "kind": "materiał",
+      "required": true,
+      "deadline": "2026-06-09",
+      "ready": true,
+      "note": ""
+    },
+    {
+      "id": "B",
+      "name": "Demo",
+      "kind": "ćwiczenie",
+      "required": true,
+      "deadline": "2026-06-10",
+      "ready": false,
+      "note": ""
+    },
+    {
+      "id": "C",
+      "name": "Dokumenty",
+      "kind": "materiał",
+      "required": true,
+      "deadline": "2026-06-11",
+      "ready": true,
+      "note": ""
+    },
+    {
+      "id": "D",
+      "name": "Nagranie próbne",
+      "kind": "ćwiczenie",
+      "required": false,
+      "deadline": "2026-06-12",
+      "ready": true,
+      "note": ""
+    }
+  ],
+  "questions": [
+    {
+      "id": "Q-1",
+      "text": "Dlaczego procent nie dowodzi gotowości merytorycznej?",
+      "answer": "To udział wykonanych wymagań, nie ocena wiedzy.",
+      "attempts": 0,
+      "attemptNote": ""
+    }
+  ]
+};
+// ===== validation.mjs =====
+// Format v1: jawne pola i wyłącznie wartości prymitywne, bez cichych konwersji.
+const VERSION = 1;
+const LIMIT = 1000;
+function fail(message) { throw new TypeError(message); }
+function object(value, label) {
+  if (value === null || typeof value !== 'object' || Array.isArray(value) ||
+      ![Object.prototype, null].includes(Object.getPrototypeOf(value))) fail(label + ': oczekiwano zwykłego obiektu');
+}
+function fields(value, names, label) {
+  object(value, label);
+  if (Reflect.ownKeys(value).length !== names.length || names.some(k => !Object.hasOwn(value, k)))
+    fail(label + ': niepełny lub nieznany zestaw pól');
+  for (const key of names) if (!Object.hasOwn(Object.getOwnPropertyDescriptor(value, key), 'value')) fail(label + ': akcesory niedozwolone');
+}
+function string(value, label, required = false) {
+  if (typeof value !== 'string' || (required && !value.trim())) fail(label + ': oczekiwano tekstu' + (required ? ' niepustego' : ''));
+}
+function date(value) {
+  if (typeof value !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(value)) fail('Termin: wymagany RRRR-MM-DD');
+  const [y,m,d] = value.split('-').map(Number);
+  const leap = y % 4 === 0 && (y % 100 !== 0 || y % 400 === 0);
+  const days = [31,leap ? 29 : 28,31,30,31,30,31,31,30,31,30,31];
+  if (y < 1 || m < 1 || m > 12 || d < 1 || d > days[m-1]) fail('Termin: niepoprawna data kalendarzowa');
+}
+const ITEM_FIELDS = Object.freeze(['id','name','kind','required','deadline','ready','note']);
+const QUESTION_FIELDS = Object.freeze(['id','text','answer','attempts','attemptNote']);
+function validateItem(v) {
+  fields(v, ITEM_FIELDS, 'Element');
+  string(v.id, 'ID', true); string(v.name, 'Nazwa', true); string(v.note, 'Notatka');
+  if (!['materiał','ćwiczenie'].includes(v.kind)) fail('Rodzaj: materiał lub ćwiczenie');
+  for (const k of ['required','ready']) if (typeof v[k] !== 'boolean') fail(k + ': wymagany boolean');
+  date(v.deadline);
+  return { ...v };
+}
+function validateQuestion(v) {
+  fields(v, QUESTION_FIELDS, 'Pytanie');
+  string(v.id, 'ID', true); string(v.text, 'Treść', true); string(v.answer, 'Własna odpowiedź'); string(v.attemptNote, 'Notatka po próbie');
+  if (!Number.isSafeInteger(v.attempts) || v.attempts < 0) fail('Liczba prób: nieujemna bezpieczna liczba całkowita');
+  return { ...v };
+}
+function list(value, validator, label) {
+  if (!Array.isArray(value) || value.length > LIMIT) fail(label + ': wymagana lista do 1000 rekordów');
+  const ids = new Set(); const result = [];
+  for (const entry of value) {
+    const record = validator(entry);
+    if (ids.has(record.id)) fail(label + ': powtórzone ID ' + record.id);
+    ids.add(record.id); result.push(record);
+  }
+  return result;
+}
+function validateDataset(value) {
+  fields(value, ['version','items','questions'], 'Zestaw');
+  if (value.version !== VERSION) fail('Nieobsługiwana wersja formatu');
+  return { version: VERSION, items: list(value.items, validateItem, 'Elementy'), questions: list(value.questions, validateQuestion, 'Pytania') };
+}
+
+// ===== algorithms.mjs =====
+// Funkcje algorytmiczne przyjmują rekordy zwalidowane przez model.
+// Porządek ID: deterministyczny leksykograficzny UTF-16, bez localeCompare.
+function compareItems(a, b) {
+  if (a.deadline !== b.deadline) return a.deadline < b.deadline ? -1 : 1;
+  return a.id === b.id ? 0 : a.id < b.id ? -1 : 1;
+}
+function linearSearchById(records, id) {
+  let visited = 0;
+  for (let i = 0; i < records.length; i++) {
+    visited++;
+    if (records[i].id === id) return { record: { ...records[i] }, index: i, visited };
+  }
+  return { record: null, index: -1, visited };
+}
+function insertionSort(items, onStep = null) {
+  const records = items.map(item => ({ ...item }));
+  let comparisons = 0, shifts = 0;
+  for (let i = 1; i < records.length; i++) {
+    const before = onStep ? records.map(x => x.id) : null;
+    const decisions = onStep ? [] : null;
+    const key = records[i]; let j = i - 1;
+    while (j >= 0) {
+      comparisons++; // Dokładnie jedno wywołanie komparatora złożonego klucza.
+      const order = compareItems(records[j], key);
+      if (onStep) decisions.push(records[j].id + (order <= 0 ? ' ≤ ' : ' > ') + key.id + (order <= 0 ? ': zatrzymaj' : ': przesuń'));
+      if (order <= 0) break;
+      records[j+1] = records[j]; shifts++; j--;
+    }
+    records[j+1] = key;
+    if (onStep) onStep({before, decision: decisions.join('; ') + '; wstaw ' + key.id, after: records.map(x => x.id)});
+  }
+  return { records, comparisons, shifts };
+}
+function calculateReadiness(items) {
+  let required = 0, ready = 0, visited = 0;
+  for (const item of items) {
+    visited++;
+    if (item.required) { required++; if (item.ready) ready++; }
+  }
+  return { required, ready, ratio: required ? ready / required : null,
+    message: required ? (ready === required ? 'Wszystkie wymagane elementy gotowe' : 'Pozostały obowiązkowe braki') : 'Brak zdefiniowanych wymagań', visited };
+}
+function formatReadiness(result) {
+  return result.ratio === null ? result.message : (result.ratio * 100).toLocaleString('pl-PL', { maximumFractionDigits: 1 }) + '%';
+}
+function missingItems(items) {
+  const missing = []; let visited = 0;
+  for (const item of items) { visited++; if (item.required && !item.ready) missing.push(item); }
+  return { ...insertionSort(missing), visited };
+}
+
+// ===== planner.mjs =====
+
+
+class Planner {
+  #state;
+  constructor(data = { version: 1, items: [], questions: [] }) { this.#state = validateDataset(data); }
+  snapshot() { return validateDataset(this.#state); }
+  exportJSON() { return JSON.stringify(this.#state, null, 2); }
+  importJSON(json, { confirmed = false } = {}) {
+    if (typeof json !== 'string') fail('Import wymaga tekstu JSON');
+    const next = validateDataset(JSON.parse(json));
+    if (confirmed !== true) fail('Zastąpienie zestawu wymaga potwierdzenia');
+    this.#state = next;
+  }
+  #commit(next) { this.#state = validateDataset(next); }
+  #add(collection, record) {
+    this.#commit({ ...this.#state, [collection]: [...this.#state[collection], record] });
+  }
+  #update(collection, id, patch) {
+    string(id, 'ID', true); object(patch, 'Zmiany');
+    const allowed = collection === 'items' ? ITEM_FIELDS : QUESTION_FIELDS;
+    for (const key of Reflect.ownKeys(patch)) {
+      if (!allowed.includes(key) || !Object.hasOwn(Object.getOwnPropertyDescriptor(patch, key), 'value')) fail('Nieznane pole lub akcesor');
+    }
+    if (Object.hasOwn(patch, 'id') && patch.id !== id) fail('ID jest niezmienne');
+    const found = linearSearchById(this.#state[collection], id);
+    if (found.index === -1) fail('Nie znaleziono ID: ' + id);
+    const records = [...this.#state[collection]];
+    records[found.index] = { ...found.record, ...patch };
+    this.#commit({ ...this.#state, [collection]: records });
+  }
+  #remove(collection, id) {
+    string(id, 'ID', true);
+    const found = linearSearchById(this.#state[collection], id);
+    if (found.index === -1) fail('Nie znaleziono ID: ' + id);
+    const records = [...this.#state[collection]];
+    records.splice(found.index, 1);
+    this.#commit({ ...this.#state, [collection]: records });
+  }
+  removeItem(id) { this.#remove('items', id); }
+  removeQuestion(id) { this.#remove('questions', id); }
+  addItem(record) { this.#add('items', record); }
+  updateItem(id, patch) { this.#update('items', id, patch); }
+  addQuestion(record) { this.#add('questions', record); }
+  updateQuestion(id, patch) { this.#update('questions', id, patch); }
+  findQuestion(id) { string(id, 'ID', true); return linearSearchById(this.#state.questions, id); }
+  // Indeks pozwala przyszłemu UI przeglądać pytania kolejno, bez ukrytego kursora.
+  questionAt(index) {
+    if (!Number.isSafeInteger(index) || index < 0) fail('Indeks musi być nieujemną liczbą całkowitą');
+    return index < this.#state.questions.length ? { ...this.#state.questions[index] } : null;
+  }
+  recordAttempt(id, note) {
+    string(note, 'Notatka po próbie');
+    const { record } = this.findQuestion(id);
+    if (!record) fail('Nie znaleziono pytania');
+    this.updateQuestion(id, { attempts: record.attempts + 1, attemptNote: note });
+  }
+  readiness() { return calculateReadiness(this.#state.items); }
+  missing() { return missingItems(this.#state.items); }
+}
+
+// ===== app.mjs =====
+
+
+
+const planner = new Planner();
+const $ = s => document.querySelector(s);
+const content = $('#content'), dialog = $('#dialog'), body = $('#dialog-body');
+let view = 'dashboard', cursor = 0, opener;
+function el(tag, text, cls) { const n=document.createElement(tag); if(text!==undefined)n.textContent=text; if(cls)n.className=cls; return n; }
+function add(parent,...nodes){parent.append(...nodes);return parent;}
+function button(text,action,cls){const b=el('button',text,cls);b.type='button';b.onclick=()=>safe(action);return b;}
+function message(text,error=false){$('#notice').textContent=text;$('#notice').className=error?'error':'';}
+function safe(fn){try { const result=fn(); if(result?.catch)result.catch(e=>message(e.message,true)); }catch(e){message(e.message,true);}}
+function close(){dialog.close();body.replaceChildren();if(opener?.isConnected)opener.focus();else document.querySelector('[aria-current="page"]').focus();}
+dialog.addEventListener('cancel',e=>{e.preventDefault();close();});
+function modal(title){opener=document.activeElement;body.replaceChildren(el('h2',title));body.firstChild.id='dialog-title';dialog.showModal();return body;}
+function confirmAction(title,detail,action){const b=modal(title);add(b,el('p',detail),add(el('div',undefined,'dialog-actions'),button('Anuluj',close),button('Potwierdź',()=>{action();close();render();message('Zmiana została zapisana w pamięci tej strony.');},'primary')));b.querySelector('button').focus();}
+function card(title){const c=el('article',undefined,'card');if(title)c.append(el('h2',title));return c;}
+function empty(parent,text){parent.append(el('p',text,'empty'));}
+const titles={dashboard:['Twój plan przygotowań do obrony','Małe kroki. Jasne priorytety. Twój własny plan.'],items:['Materiały i ćwiczenia','Każdy element ma pełną datę. ID pozostaje niezmienne.'],questions:['Pytania i trening','Ćwicz własną odpowiedź i zapisz refleksję po próbie.'],analysis:['Algorytmy pod lupą','Rzeczywiste operacje, widoczne decyzje, powtarzalne porównania.'],data:['Twój plan, Twoje dane','Eksportuj regularnie. Pliki zostają na Twoim komputerze.']};
+function render(){content.replaceChildren();$('#title').textContent=titles[view][0];$('#subtitle').textContent=titles[view][1];for(const b of document.querySelectorAll('[data-view]')){if(b.dataset.view===view)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');}({dashboard,items,questions,analysis,data})[view]();}
+for(const b of document.querySelectorAll('[data-view]'))b.onclick=()=>{view=b.dataset.view;message('');render();$('#main').focus();};
+$('#example').onclick=()=>safe(async()=>{const json=JSON.stringify(OFFLINE_SCENARIO);prepareImport(json,'Przykład kontrolny');});
+function dashboard(){const s=planner.snapshot(),r=planner.readiness(),missing=planner.missing();const grid=el('div',undefined,'grid');const hero=card();hero.classList.add('hero');const ring=el('div',undefined,'ring');ring.style.setProperty('--progress',((r.ratio??0)*360)+'deg');const center=el('div',undefined,'ring-center');add(center,el('strong',r.ratio===null?'—':formatReadiness(r)),el('small','realizacji planu'));add(ring,center);add(hero,ring,add(el('div'),el('h2','Gotowość do kolejnego kroku'),el('p',r.message),el('p',r.ready+' z '+r.required+' obowiązkowych gotowe')));const next=card('Najbliższy priorytet');if(missing.records.length){const x=missing.records[0];add(next,el('span','OBOWIĄZKOWE · '+x.id,'pill'),el('h3',x.name),el('p','Termin: '+x.deadline),button('Zobacz szczegóły',()=>details(x,false)));}else empty(next,r.required?'Brak obowiązkowych zaległości.':'Dodaj pierwszy wymagany element.');add(grid,hero,next);content.append(grid);const stats=el('div',undefined,'stats');for(const [n,t] of [[r.ready,'Gotowe obowiązkowe'],[r.required-r.ready,'Obowiązkowe braki'],[s.questions.length,'Pytania treningowe']])add(stats,add(el('div',undefined,'stat'),el('strong',String(n)),el('span',t)));content.append(stats);const list=card('Co jeszcze przed Tobą?');list.append(el('p','Obowiązkowe braki: termin rosnąco, przy remisie ID.','muted'));if(!missing.records.length)empty(list,'Nie ma elementów na liście braków.');for(const x of missing.records)add(list,add(el('div',undefined,'row'),add(el('div'),el('h3',x.name),el('p',x.id+' · '+x.kind+' · '+x.deadline)),button('Szczegóły',()=>details(x,false))));content.append(list);}
+function details(x,q){const b=modal(q?'Karta pytania':'Karta elementu');const dl=el('dl');const names=q?{id:'ID',text:'Treść',answer:'Własna odpowiedź',attempts:'Liczba prób',attemptNote:'Notatka po próbie'}:{id:'ID',name:'Nazwa',kind:'Rodzaj',required:'Obowiązkowy',deadline:'Termin',ready:'Gotowy',note:'Notatka'};for(const [k,label]of Object.entries(names))add(dl,el('dt',label),el('dd',typeof x[k]==='boolean'?(x[k]?'Tak':'Nie'):String(x[k])||'—'));add(b,dl,button('Zamknij',close));}
+function field(form,key,label,value='',type='text'){const l=el('label',label),i=el(type==='textarea'?'textarea':type==='select'?'select':'input');i.name=key;i.id='f-'+key;if(type==='select'){for(const k of ['materiał','ćwiczenie']){const o=el('option',k);o.value=k;i.append(o);}}else if(type!=='textarea')i.type=type;if(type==='checkbox'){i.checked=value;l.className='check';}else i.value=value;l.append(i);form.append(l);return i;}
+function editor(q,record=null){const b=modal(record?'Edytuj rekord':q?'Dodaj pytanie':'Dodaj element');const form=el('form'),fields=el('div',undefined,'fields'),err=el('p','','error');err.setAttribute('role','alert');const x=record??(q?{id:'',text:'',answer:'',attempts:0,attemptNote:''}:{id:'',name:'',kind:'materiał',deadline:'',required:true,ready:false,note:''});const controls={};controls.id=field(fields,'id','ID',x.id);controls.id.required=true;controls.id.readOnly=!!record;
+if(q){controls.text=field(fields,'text','Treść pytania',x.text,'textarea');controls.text.required=true;controls.answer=field(fields,'answer','Własna odpowiedź',x.answer,'textarea');}else{controls.name=field(fields,'name','Nazwa',x.name);controls.name.required=true;controls.kind=field(fields,'kind','Rodzaj',x.kind,'select');controls.deadline=field(fields,'deadline','Termin (RRRR-MM-DD)',x.deadline);controls.deadline.required=true;controls.deadline.placeholder='2026-11-23';controls.required=field(fields,'required','Obowiązkowy',x.required,'checkbox');controls.ready=field(fields,'ready','Gotowy',x.ready,'checkbox');controls.note=field(fields,'note','Notatka',x.note,'textarea');}
+const submit=el('button','Zapisz','primary');submit.type='submit';add(form,fields,err,add(el('div',undefined,'dialog-actions'),button('Anuluj',close),submit));form.onsubmit=e=>{e.preventDefault();try{const next={...x};for(const[k,i]of Object.entries(controls))next[k]=i.type==='checkbox'?i.checked:i.value;if(record)planner[q?'updateQuestion':'updateItem'](record.id,next);else planner[q?'addQuestion':'addItem'](next);close();render();message('Zapisano rekord.');}catch(error){err.textContent=error.message;}};b.append(form);controls[record?(q?'text':'name'):'id'].focus();}
+function recordCard(x,q){const c=card();c.classList.add('record');c.dataset.recordId=x.id;add(c,add(el('div'),el('span',x.id,'pill'),el('h3',q?x.text:x.name),el('p',q?'Próby: '+x.attempts:x.kind+' · Termin: '+x.deadline),el('span',q?'Pytanie treningowe':(x.required?'Obowiązkowy':'Opcjonalny')+' · '+(x.ready?'Gotowy':'Do zrobienia'),'badge'+(!q&&x.ready?' done':''))));const actions=el('div',undefined,'actions');add(actions,button('Szczegóły',()=>details(x,q)),button('Edytuj',()=>editor(q,x)));if(!q)actions.append(button(x.ready?'Cofnij gotowość':'Oznacz gotowe',()=>{planner.updateItem(x.id,{ready:!x.ready});render();message('Status zmieniony; gotowość przeliczona.');}));actions.append(button('Usuń',()=>confirmAction('Usunąć rekord?',x.id+' — tej operacji nie można cofnąć.',()=>planner[q?'removeQuestion':'removeItem'](x.id)),'danger'));c.append(actions);return c;}
+function items(){add(content,add(el('div',undefined,'toolbar'),el('h2','Twój plan'),button('Dodaj element',()=>editor(false),'primary')));const list=el('div',undefined,'list');const records=planner.snapshot().items;if(!records.length)empty(list,'Plan jest pusty. Dodaj materiał lub ćwiczenie.');for(const x of records)list.append(recordCard(x,false));content.append(list);}
+function questions(){const records=planner.snapshot().questions;add(content,add(el('div',undefined,'toolbar'),el('h2','Baza pytań'),button('Dodaj pytanie',()=>editor(true),'primary')));const search=el('form',undefined,'toolbar');const input=field(search,'search','Szukaj dokładnego ID');input.required=true;const go=el('button','Szukaj ID');go.type='submit';const result=el('p','','muted');result.setAttribute('role','status');search.append(go);search.onsubmit=e=>{e.preventDefault();safe(()=>{const r=planner.findQuestion(input.value);result.textContent=(r.record?'Znaleziono '+r.record.id:'Nie znaleziono')+' · Sprawdzone rekordy: '+r.visited;if(r.record){cursor=r.index;drawTraining();}});};add(content,search,result);const training=card('Sesja treningowa');training.classList.add('training');content.append(training);
+function drawTraining(){training.replaceChildren(el('h2','Sesja treningowa'));const all=planner.snapshot().questions;if(cursor>=all.length)cursor=0;const x=planner.questionAt(cursor);if(!x){empty(training,'Brak pytań. Dodaj pierwsze pytanie.');return;}add(training,el('p',(cursor+1)+' / '+all.length+' · '+x.id,'pill'),el('h3',x.text),el('p','Liczba prób: '+x.attempts,'muted'));const form=el('form');const answer=field(form,'training-answer','Własna odpowiedź',x.answer,'textarea');const note=field(form,'training-note','Notatka po próbie',x.attemptNote,'textarea');const submit=el('button','Zapisz próbę','primary');submit.type='submit';const err=el('p','','error');err.setAttribute('role','alert');add(form,el('p','Zapis próby zwiększa licznik. Notatka nie zastępuje własnej odpowiedzi.','muted'),err,add(el('div',undefined,'actions'),submit,button('Następne pytanie',()=>{cursor=(cursor+1)%all.length;drawTraining();training.querySelector('textarea')?.focus();})));form.onsubmit=e=>{e.preventDefault();try{const temporary=new Planner(planner.snapshot());temporary.updateQuestion(x.id,{answer:answer.value});temporary.recordAttempt(x.id,note.value);planner.importJSON(temporary.exportJSON(),{confirmed:true});render();message('Zapisano odpowiedź i notatkę. Liczba prób zwiększona.');}catch(error){err.textContent=error.message;}};training.append(form);}
+drawTraining();const list=el('div',undefined,'list');list.style.marginTop='22px';for(const x of records)list.append(recordCard(x,true));content.append(list);}
+function analysis(){const r=planner.readiness(),m=planner.missing();const c=card('Obliczenia Twojego planu');add(c,el('p',r.required?r.ready+' / '+r.required+' × 100% = '+formatReadiness(r):r.message),el('p','Zliczanie: '+r.visited+' odwiedzonych. Filtrowanie: '+m.visited+' odwiedzonych. Sortowanie braków: '+m.comparisons+' porównań, '+m.shifts+' przesunięć.'),el('p','Tablice rekordów; pierwsze dokładne dopasowanie ID. Zliczanie i wyszukiwanie O(n). Sortowanie przez wstawianie: najlepiej O(n), najgorzej O(n²), kopia O(n) pamięci. Pełna walidacja zmiany kosztuje O(n + q).','muted'));content.append(c);const stepCard=card('Przed → decyzja → po');stepCard.style.marginTop='22px';stepCard.append(el('p','Mały przykład dydaktyczny: wspólna data 2026-06-10, kolejność C, A, B. Porównujemy termin, potem ID.','muted'));const trace=[];const sorted=insertionSort(['C','A','B'].map(id=>({id,deadline:'2026-06-10'})),s=>trace.push(s));for(const s of trace)add(stepCard,add(el('div',undefined,'step'),el('p','Przed: '+s.before.join(', ')),el('p','Decyzja: '+s.decision),el('p','Po: '+s.after.join(', '))));stepCard.append(el('p',sorted.comparisons+' porównania · '+sorted.shifts+' przesunięcia'));content.append(stepCard);const compare=card('Porównanie 10 / 100 / 1000');compare.style.marginTop='22px';compare.append(el('p','Dane deterministyczne, wspólny termin i rosnące ID. Liczniki pochodzą z faktycznych wywołań tych samych funkcji. Niezależny wzorzec sortowania jest sprawdzany w testach.','muted'));const table=el('table'),head=el('tr');for(const t of ['n','Porównania ↑','Przesunięcia ↑','Porównania ↓','Przesunięcia ↓','Search: początek / koniec / brak'])head.append(el('th',t));table.append(add(el('thead'),head));const tb=el('tbody');for(const n of [10,100,1000]){const a=Array.from({length:n},(_,i)=>({id:'I-'+String(i).padStart(4,'0'),deadline:'2026-06-10'}));const x=insertionSort(a),y=insertionSort([...a].reverse());const searches=[a[0].id,a[n-1].id,'BRAK'].map(id=>linearSearchById(a,id).visited);const tr=el('tr');for(const v of [n,x.comparisons,x.shifts,y.comparisons,y.shifts,searches.join(' / ')])tr.append(el('td',String(v)));tb.append(tr);}table.append(tb);add(compare,add(el('div',undefined,'table-wrap'),table),el('p','Uporządkowane dane zatrzymują pętlę po pierwszym porównaniu. Odwrócone wymagają przesunięcia całego uporządkowanego prefiksu. Wyszukiwanie kończy się na pierwszym trafieniu; brak wyniku przechodzi całą listę.'));content.append(compare);}
+function prepareImport(json,label){const parsed=validateDataset(JSON.parse(json));confirmAction('Zastąpić cały plan?',label+': '+parsed.items.length+' elementów i '+parsed.questions.length+' pytań. Cały zestaw przeszedł walidację. Obecna praca zostanie zastąpiona. Najpierw możesz anulować i wyeksportować dane.',()=>{planner.importJSON(json,{confirmed:true});cursor=0;});}
+function data(){const grid=el('div',undefined,'grid');const ex=card('Zachowaj swój plan');ex.classList.add('data-card');add(ex,el('p','Dane są wyłącznie w pamięci otwartej strony — bez localStorage, kont i chmury. Odświeżenie zamyka sesję i usuwa dane. Pobierz JSON przed zamknięciem.'),button('Eksportuj JSON',()=>{const blob=new Blob([planner.exportJSON()],{type:'application/json'}),url=URL.createObjectURL(blob),a=el('a');a.href=url;a.download='plan-obrony.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);message('Przygotowano plik JSON do pobrania.');},'primary'));const im=card('Wczytaj zapisany plan');im.classList.add('data-card');add(im,el('p','JSON v1, maksymalnie 1000 rekordów każdego rodzaju. Sprawdzamy cały plik przed potwierdzeniem podmiany. Błąd lub anulowanie nie zmienia Twojej pracy.'));const input=field(im,'import','Plik JSON','','file');input.accept='.json,application/json';input.onchange=()=>safe(async()=>{const file=input.files[0];if(!file)return;try{prepareImport(await file.text(),file.name);}finally{input.value='';}});add(grid,ex,im);content.append(grid);}
+render();
+
+</script></body></html>

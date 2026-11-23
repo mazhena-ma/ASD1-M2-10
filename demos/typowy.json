@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "id": "A",
+      "name": "Prezentacja",
+      "kind": "materiał",
+      "required": true,
+      "deadline": "2026-06-09",
+      "ready": true,
+      "note": ""
+    },
+    {
+      "id": "B",
+      "name": "Demo",
+      "kind": "ćwiczenie",
+      "required": true,
+      "deadline": "2026-06-10",
+      "ready": false,
+      "note": ""
+    },
+    {
+      "id": "C",
+      "name": "Dokumenty",
+      "kind": "materiał",
+      "required": true,
+      "deadline": "2026-06-11",
+      "ready": true,
+      "note": ""
+    },
+    {
+      "id": "D",
+      "name": "Nagranie próbne",
+      "kind": "ćwiczenie",
+      "required": false,
+      "deadline": "2026-06-12",
+      "ready": true,
+      "note": ""
+    }
+  ],
+  "questions": [
+    {
+      "id": "Q-1",
+      "text": "Dlaczego procent nie dowodzi gotowości merytorycznej?",
+      "answer": "To udział wykonanych wymagań, nie ocena wiedzy.",
+      "attempts": 0,
+      "attemptNote": ""
+    }
+  ]
+}

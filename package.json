@@ -1,0 +1,9 @@
+{
+  "name": "moja-praca-dyplomowa-asd1-m2-10",
+  "version": "2.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "test": "node --test tests/stage1.test.mjs tests/stage2.test.mjs"
+  }
+}

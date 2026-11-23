@@ -1,0 +1,149 @@
+
+> moja-praca-dyplomowa-asd1-m2-10@2.0.0 test
+> node --test tests/stage1.test.mjs tests/stage2.test.mjs
+
+TAP version 13
+# Subtest: 01 kontrolny: 2/3 -> B gotowe -> 100%
+ok 1 - 01 kontrolny: 2/3 -> B gotowe -> 100%
+  ---
+  duration_ms: 22.909896
+  type: 'test'
+  ...
+# Subtest: 02 opcjonalne nie zmieniają wyniku
+ok 2 - 02 opcjonalne nie zmieniają wyniku
+  ---
+  duration_ms: 0.517126
+  type: 'test'
+  ...
+# Subtest: 03 brak obowiązkowych ma osobny komunikat
+ok 3 - 03 brak obowiązkowych ma osobny komunikat
+  ---
+  duration_ms: 0.147148
+  type: 'test'
+  ...
+# Subtest: 04 cofnięcie statusu przywraca brak
+ok 4 - 04 cofnięcie statusu przywraca brak
+  ---
+  duration_ms: 1.009686
+  type: 'test'
+  ...
+# Subtest: 05 remisy dat rozstrzyga ID i filtr obowiązkowych
+ok 5 - 05 remisy dat rozstrzyga ID i filtr obowiązkowych
+  ---
+  duration_ms: 0.291202
+  type: 'test'
+  ...
+# Subtest: 06 puste listy: liczniki zero, brak dzielenia przez zero
+ok 6 - 06 puste listy: liczniki zero, brak dzielenia przez zero
+  ---
+  duration_ms: 0.212564
+  type: 'test'
+  ...
+# Subtest: 07 roundtrip JSON, potwierdzenie i atomowość błędnego importu
+ok 7 - 07 roundtrip JSON, potwierdzenie i atomowość błędnego importu
+  ---
+  duration_ms: 1.255089
+  type: 'test'
+  ...
+# Subtest: 08 kalendarz: format, miesiące i lata przestępne
+ok 8 - 08 kalendarz: format, miesiące i lata przestępne
+  ---
+  duration_ms: 0.568092
+  type: 'test'
+  ...
+# Subtest: 09 ID niepuste, unikalne w rodzaju, bez zmian przy aktualizacji
+ok 9 - 09 ID niepuste, unikalne w rodzaju, bez zmian przy aktualizacji
+  ---
+  duration_ms: 0.755279
+  type: 'test'
+  ...
+# Subtest: 10 ścisłe bool/number/teksty i pełne pola
+ok 10 - 10 ścisłe bool/number/teksty i pełne pola
+  ---
+  duration_ms: 0.979731
+  type: 'test'
+  ...
+# Subtest: 11 limit 1000 osobno, 1001 odrzucony bez zapisu
+ok 11 - 11 limit 1000 osobno, 1001 odrzucony bez zapisu
+  ---
+  duration_ms: 61.802629
+  type: 'test'
+  ...
+# Subtest: 12 brak referencji pozwalających zmienić stan
+ok 12 - 12 brak referencji pozwalających zmienić stan
+  ---
+  duration_ms: 1.040922
+  type: 'test'
+  ...
+# Subtest: 13 trening: kolejność, licznik, oddzielna notatka, atomowość
+ok 13 - 13 trening: kolejność, licznik, oddzielna notatka, atomowość
+  ---
+  duration_ms: 0.76916
+  type: 'test'
+  ...
+# Subtest: 14 linear search: pierwsze dopasowanie, początek/koniec/brak
+ok 14 - 14 linear search: pierwsze dopasowanie, początek/koniec/brak
+  ---
+  duration_ms: 0.186406
+  type: 'test'
+  ...
+# Subtest: 15 sortowanie: mały krok, stabilność i brak mutacji
+ok 15 - 15 sortowanie: mały krok, stabilność i brak mutacji
+  ---
+  duration_ms: 0.523256
+  type: 'test'
+  ...
+# Subtest: 16 porównania i oracle n=10
+ok 16 - 16 porównania i oracle n=10
+  ---
+  duration_ms: 0.612397
+  type: 'test'
+  ...
+# {"n":10,"orderedComparisons":9,"orderedShifts":0,"reversedComparisons":45,"reversedShifts":45,"search":[1,10,10]}
+# Subtest: 16 porównania i oracle n=100
+ok 17 - 16 porównania i oracle n=100
+  ---
+  duration_ms: 4.317796
+  type: 'test'
+  ...
+# {"n":100,"orderedComparisons":99,"orderedShifts":0,"reversedComparisons":4950,"reversedShifts":4950,"search":[1,100,100]}
+# Subtest: 16 porównania i oracle n=1000
+ok 18 - 16 porównania i oracle n=1000
+  ---
+  duration_ms: 30.287064
+  type: 'test'
+  ...
+# {"n":1000,"orderedComparisons":999,"orderedShifts":0,"reversedComparisons":499500,"reversedShifts":499500,"search":[1,1000,1000]}
+# Subtest: 18 publiczny schemat nie pozwala zmienić walidacji
+ok 19 - 18 publiczny schemat nie pozwala zmienić walidacji
+  ---
+  duration_ms: 0.405901
+  type: 'test'
+  ...
+# Subtest: 17 błędna aktualizacja jest atomowa; tekst HTML jest tylko danymi
+ok 20 - 17 błędna aktualizacja jest atomowa; tekst HTML jest tylko danymi
+  ---
+  duration_ms: 0.403437
+  type: 'test'
+  ...
+# Subtest: usuwanie elementu, pytania i atomowość błędu
+ok 21 - usuwanie elementu, pytania i atomowość błędu
+  ---
+  duration_ms: 2.510348
+  type: 'test'
+  ...
+# Subtest: ślad rzeczywistych kroków nie zmienia wyniku ani liczników
+ok 22 - ślad rzeczywistych kroków nie zmienia wyniku ani liczników
+  ---
+  duration_ms: 1.852664
+  type: 'test'
+  ...
+1..22
+# tests 22
+# suites 0
+# pass 22
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 217.104879

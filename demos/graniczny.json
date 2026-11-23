@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "id": "OPT-1",
+      "name": "Nagranie opcjonalne",
+      "kind": "ćwiczenie",
+      "required": false,
+      "deadline": "2026-12-15",
+      "ready": false,
+      "note": "Przykład bez wymagań obowiązkowych"
+    }
+  ],
+  "questions": []
+}
